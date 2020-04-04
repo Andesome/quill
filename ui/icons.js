@@ -33,6 +33,7 @@ module.exports = {
     '+1'      : require('../assets/icons/indent.svg'),
     '-1'      : require('../assets/icons/outdent.svg')
   },
+  'lineHeight': require('../assets/icons/line-height.svg'),
   'link'      : require('../assets/icons/link.svg'),
   'list': {
     'ordered' : require('../assets/icons/list-ordered.svg'),

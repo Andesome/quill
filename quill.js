@@ -12,6 +12,7 @@ import { BackgroundClass, BackgroundStyle } from './formats/background';
 import { ColorClass, ColorStyle } from './formats/color';
 import { FontClass, FontStyle } from './formats/font';
 import { SizeClass, SizeStyle } from './formats/size';
+import LineHeight from './formats/lineheight';
 
 import Bold from './formats/bold';
 import Italic from './formats/italic';
@@ -32,6 +33,7 @@ import Toolbar from './modules/toolbar';
 import Icons from './ui/icons';
 import Picker from './ui/picker';
 import ColorPicker from './ui/color-picker';
+import LineHeightPicker from './ui/line-height-picker';
 import IconPicker from './ui/icon-picker';
 import Tooltip from './ui/tooltip';
 
@@ -47,6 +49,7 @@ Quill.register({
   'attributors/class/color': ColorClass,
   'attributors/class/direction': DirectionClass,
   'attributors/class/font': FontClass,
+  'attributors/class/line-height': LineHeight,
   'attributors/class/size': SizeClass,
 
   'attributors/style/align': AlignStyle,
@@ -66,6 +69,7 @@ Quill.register({
   'formats/background': BackgroundStyle,
   'formats/color': ColorStyle,
   'formats/font': FontClass,
+  'formats/line-height': LineHeight,
   'formats/size': SizeClass,
 
   'formats/blockquote': Blockquote,
@@ -97,6 +101,7 @@ Quill.register({
   'ui/picker': Picker,
   'ui/icon-picker': IconPicker,
   'ui/color-picker': ColorPicker,
+  'ui/line-height-picker': LineHeightPicker,
   'ui/tooltip': Tooltip
 }, true);
 
