@@ -1,11 +1,13 @@
-import { ClassAttributor, Scope } from 'parchment';
+import Parchment from 'parchment';
+
+const { Attributor, Scope } = Parchment
 
 const config = {
   scope: Scope.BLOCK,
   whitelist: ['1', '1.15', '1.5', '2', '2.5', '3'],
 };
 
-class LineHeightClass extends ClassAttributor {
+class LineHeightClass extends Attributor.Class {
   add(node, value) {
     if (!this.canAdd(node, value)) return false;
     this.remove(node);
