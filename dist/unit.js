@@ -11791,19 +11791,27 @@ var _createClass = function () { function defineProperties(target, props) { for 
 
 var _parchment = __webpack_require__(0);
 
+var _parchment2 = _interopRequireDefault(_parchment);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+var Attributor = _parchment2.default.Attributor,
+    Scope = _parchment2.default.Scope;
+
+
 var config = {
-  scope: _parchment.Scope.BLOCK,
+  scope: Scope.BLOCK,
   whitelist: ['1', '1.15', '1.5', '2', '2.5', '3']
 };
 
-var LineHeightClass = function (_ClassAttributor) {
-  _inherits(LineHeightClass, _ClassAttributor);
+var LineHeightClass = function (_Attributor$Class) {
+  _inherits(LineHeightClass, _Attributor$Class);
 
   function LineHeightClass() {
     _classCallCheck(this, LineHeightClass);
@@ -11823,7 +11831,7 @@ var LineHeightClass = function (_ClassAttributor) {
   }]);
 
   return LineHeightClass;
-}(_parchment.ClassAttributor);
+}(Attributor.Class);
 
 var LineHeight = new LineHeightClass('line-height', 'ql-line-height', config);
 
